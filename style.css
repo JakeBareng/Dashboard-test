@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+    margin: 0;
+}
+.sidebar{
+    background-color: #a6aef8;
+    grid-area: 1/1/3/2;
+}
+header{
+    background-color: rgb(184, 231, 245);
+    grid: 1/2/2/3;
+}
