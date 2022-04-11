@@ -1,6 +1,9 @@
 body{
     margin: 0;
 }
+p, h4, h3{
+    margin: 0;
+}
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -15,4 +18,24 @@ body{
 header{
     background-color: rgb(184, 231, 245);
     grid: 1/2/2/3;
+}
+.bottom{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.top{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.userSettings{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    display: grid;
 }
