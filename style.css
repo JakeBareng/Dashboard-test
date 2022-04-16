@@ -38,4 +38,37 @@ header{
 }
 main{
     display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.cardSection{
+    background-color: rgb(216, 199, 178);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding: 1%;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 3%;
+    column-gap: 2%;
+}
+.card{
+    border-radius: 10px;
+    padding: 3%;
+    border-left: solid rgb(130, 192, 209);
+    background-color: beige;
+    height: fit-content;
+}
+.cardInteractions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+}
+.announcements{
+    background-color: rgb(233, 171, 95);
+}
+.trending{
+    background-color: rgb(221, 154, 72);
 }
