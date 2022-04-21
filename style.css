@@ -11,12 +11,30 @@ p, h5,h4,h3,h2,h1{
     height: 100vh;
     margin: 0;
 }
+.clickable{
+    cursor: pointer;
+}
+/* -------------------------------- */
 .sidebar{
     background-color: #ebebeb;
     grid-area: 1/1/3/2;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
 }
-.clickable{
-    cursor: pointer;
+.sidebar_Logo>.clickable{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 30px;
+}
+.iconFlex > div{
+    display: flex;
+    gap: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    align-items: center;
 }
 /* -------------------------------- */
 header{
@@ -31,6 +49,9 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.interact {
+    margin-right: 2%;
 }
 .searchBar{
     display: flex;
@@ -107,10 +128,13 @@ main{
     grid-template-rows: 1fr 1fr;
 }
 .cardSection{
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     grid-row-start: 1;
     grid-row-end: 3;
-    padding: 1%;
+    padding: 30px;
+}
+.cardSection>h3{
+    margin-bottom: 10px;
 }
 .cardContainer{
     display: grid;
@@ -134,17 +158,24 @@ main{
 /* -------------------------------- */
 .announcementsSection{
     background-color: white;
+    padding: 10px;
+    padding-top: 30px;
+
 }
-.announcementsContainer{
+.announcementsSection>h3{
+    margin-bottom: 10px;
+}
+.announcementsContainer {
     display: flex;
     flex-direction: column;
-}
-.announcmentCard{
-    margin: 3%;
+    gap: 10px;
 }
 /* -------------------------------- */
 .trendingSection{
     background-color: white;
+    padding: 10px;
+    padding-top: 30px;
+    height: fit-content;
 }
 .trendingProfile{
     margin: 10px;
