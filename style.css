@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Akshar:wght@300&family=Nunito:wght@714&family=Poppins:wght@200&family=Zen+Antique+Soft&display=swap');
+:root{
+    --font-family1: 'Abel', sans-serif;
+    --font-family2: 'Nunito', sans-serif;
+    --font-family3: 'Akshar', sans-serif;
+}
 body{
     margin: 0;
 }
-p, h5,h4,h3,h2,h1{
+p, h5, h4, h3, h2, h1{
     margin: 0;
+    font-family: var(--font-family1);
 }
+p{
+    font-size: 0.75em;
+}
+/* ------------------------------- */
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -22,6 +33,9 @@ p, h5,h4,h3,h2,h1{
     flex-direction: column;
     gap: 5%;
 }
+.sidebar>div>div>div>p{
+    font-size: 1.1em;
+}
 .sidebar_Logo>.clickable{
     display: flex;
     align-items: center;
@@ -39,7 +53,10 @@ p, h5,h4,h3,h2,h1{
 /* -------------------------------- */
 header{
     background-color: rgb(241, 252, 255);
-    grid: 1/2/2/3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .top{
     padding: 10px;
@@ -49,6 +66,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+input[type=button] {
+    font-family: var(--font-family1);
+    font-size: 1em;
+
 }
 .interact {
     margin-right: 2%;
@@ -73,6 +95,7 @@ header{
     margin: 10px;
     padding: 10px;
     background-color: antiquewhite;
+    box-shadow: 6px 6px 8px 0px #00000047;
 }
 .searchBar > input:focus{
     outline-style: solid;
@@ -91,7 +114,6 @@ header{
 .userSettings>button{
     border-style: none;
     cursor: pointer;
-    
 }
 .bottom{
     padding: 10px;
@@ -149,6 +171,14 @@ main{
     border-left: solid rgb(130, 192, 209);
     background-color: beige;
     height: max-content;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.224);
+}
+.card>p{
+    font-family: var(--font-family1);
+    font-size: 0.9em;
+}
+.card>h4{
+    font-family: var(--font-family3);
 }
 .cardInteractions{
     display: flex;
@@ -169,6 +199,12 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.announcmentCard>h4{
+    font-family: var(--font-family1);
+}
+.announcmentCard>p{
+    font-family: var(--font-family2);
 }
 /* -------------------------------- */
 .trendingSection{
