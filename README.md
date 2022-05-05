@@ -1,5 +1,4 @@
-Dashboard web page
-a simple example dashboard using only html and css
+a simple example dashboard using html and css
 
 https://jakebareng.github.io/Dashboard-test/
 
